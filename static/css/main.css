@@ -68,7 +68,6 @@ p {
     margin-bottom: 1em; /* Space between paragraphs */
 }
 
-
 /*Animations*/
 body {
     animation: moveBackground 10s linear infinite;
