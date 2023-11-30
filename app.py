@@ -8,7 +8,7 @@ from flask import Flask, request, render_template, url_for, redirect
 
 app = Flask(__name__, static_folder='static')
 
-dotenv_path = join(dirname(__file__), 'env')
+dotenv_path = join(dirname(__file__), '.\env')
 load_dotenv(dotenv_path)
 
 @app.route('/', methods=['POST', 'GET'])
