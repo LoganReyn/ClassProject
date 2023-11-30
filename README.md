@@ -10,14 +10,7 @@
 ---
 
 ### Overview
-This document presents our class project for ARTI 380. We aim to explore innovative concepts and bring forward a unique perspective through our collective efforts.
-
----
-
-### Objectives
-- Objective 1
-- Objective 2
-- Objective 3
+Article summarizer & maturity rater.
 
 ---
 
