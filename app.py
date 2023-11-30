@@ -1,4 +1,5 @@
 import requests
+import helpers
 from bs4 import BeautifulSoup
 from flask import Flask, request, render_template, url_for, redirect
 
@@ -25,11 +26,11 @@ def index():
             else:
                 summary = summary + tag.getText()
 
-        return redirect(url_for('summary', summary=summary))
+        return redirect(url_for('summary', summary=summary, title='title'))
     
     elif request.method == 'GET':
         return render_template('index.html')
     
-@app.route('/summary/<summary>')
-def summary(summary):
+@app.route('/summary/<title>')
+def summary(summary, title):
     return render_template('summary.html', summary=summary)
