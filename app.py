@@ -1,9 +1,15 @@
 import requests
 import helpers
+import os
+from os.path import join, dirname
+from dotenv import load_dotenv
 from bs4 import BeautifulSoup
 from flask import Flask, request, render_template, url_for, redirect
 
 app = Flask(__name__, static_folder='static')
+
+dotenv_path = join(dirname(__file__), 'env')
+load_dotenv(dotenv_path)
 
 @app.route('/', methods=['POST', 'GET'])
 def index():
