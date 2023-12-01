@@ -10,9 +10,12 @@ body {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Amatic SC', cursive; 
+
 }
 
+
+/* Title is the only one with a different font*/
 .main-title {
     font-family: 'Righteous', cursive;
     font-size: 60px;
