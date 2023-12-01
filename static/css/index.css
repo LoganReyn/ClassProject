@@ -10,8 +10,8 @@ body {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    font-family: 'Amatic SC', cursive; 
-
+    font-family: sans-serif;
+    font-weight: bold; 
 }
 
 
