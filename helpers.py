@@ -26,4 +26,8 @@ def llm_response(prompt):
         messages=[{"role": "user", "content": prompt}],
         model="gpt-4",
     )
-    return response.choices[0].message.content
+    raw = response.choices[0].message.content
+    rating = raw[17]
+    summary = raw[raw.find('Summary') + 9::]
+
+    return rating, summary

@@ -48,6 +48,6 @@ def summary(articleText):
     Article Summary: [Provide a concise and informative summary, covering the main points of the article in up to two paragraphs.]
     Article for Reference:
     <<{articleText}>>'''
-    summary = helpers.llm_response(chatPrompt)
+    response = helpers.llm_response(chatPrompt)
 
-    return render_template('summary.html', summary=summary)
+    return render_template('summary.html', rating=response[0], summary=response[1])
